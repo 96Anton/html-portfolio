@@ -78,10 +78,10 @@ img {
     
 }
 hr {
-    border: 0;
+border: 0;
     height: 1px;
-    background: rgb(76, 79, 82);
-    margin: 0;
+    background: #FBD97E;
+    margin: 20px;
 }
 footer {
     text-align: center;
