@@ -5,39 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Projekt</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/styles-3.css">
 
 </head> 
-        <body style="margin: 20px;">
-            <header style="background-color: rgb(42, 59, 75); margin: -20px; padding: 20px;">
-                <h1 style="color:#ffffff">ANTON AHLM</h1>
-                <nav>
-                 
-                        <a href="./public/about.html" style="color:#ffffff"> Mitt CV</a>
-                        <br />
-                        <a href="./public/contact.html" style="color:#ffffff">Kontakt</a>
-                
-                </nav>
-            
-            </header>
+        <header>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>ANTON AHLM</h1>
       <br />
-            <main>
+       <p>Global Web Manager</p>
+       <br />
+      <button onclick="window.location.href='./public/about.html'">Mitt CV</button>
+      <button onclick="window.location.href='./public/contact.html'">Kontakt</button>
+    </div>
+  </div>
+</header>
+
+
+ <body>        
+            <main style="margin-top: 40px;">
                 <section class="projects">
                     <h2>Avslutade & pågående projekt</h2>
                     <a href="./public/about.html" style="text-decoration: none;">
 
-                    <article class="project" style="max-width:250px; border: 2px solid black; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; background-color: #c6d9ef; border-radius: 15px; color: black;">
-                        <h2 style="color: black;">Mitt CV</h2>
+                    <article class="project">
+                        <h2 style="color: #FBD97E;">Mitt CV</h2>
                         <img src="./images/Profilbild-Anton.jpg" alt="Anton Ahlm" height="200" width="200">
-                        <p>Här kan du läsa om mig och mina erfarenheter.</p>
-                        <button style="cursor: pointer; padding: 10px; color: #ffffff; background-color:rgb(20, 14, 74)">Se mitt CV</button>
+                        <p style="color: #FBD97E;">Här kan du läsa om mig och mina erfarenheter.</p>
+                        <br />
+                        <button >Se mitt CV</button>
                     </article>
                     </a>
 
             
                     <h2>Framtida projekt</h2>
-                    <p>Kommer snart...</p>
-                    <br />
+                    <p>Kommer snart...<br /><br /><br /><br /><br /><br /><br /></p>
             
                 </section>
             </main>
