@@ -37,7 +37,9 @@ font-size: 14px;
 letter-spacing: 1px;
     color: #000; 
     background-color: #48E4CB;
-    margin: 0;}
+    margin: 0;
+padding-bottom: 80px;
+}
  
 nav a {
     color: white;
