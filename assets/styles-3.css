@@ -4,12 +4,6 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
 
 .hero-image {
     background-image: url("../images/Jumpy\ Final_Bakgrund.png");
@@ -55,6 +49,22 @@ nav a:hover {
 }
 
 a {
+    color: #0c6d8b;
+}
+
+.parkour {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #816e37;
+    text-align: center;
+    line-height: 0.5;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.parkour:hover {
     color: #0c6d8b;
 }
 
@@ -158,18 +168,22 @@ footer {
 
 
 article.project {
+    display: inline-block;
     max-width: 300px;
     border: 5px solid #06465E;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-bottom: 20px;
     padding-top: 10px;
     background-color: #0B696B;
     border-radius: 25px;
 
-    margin: 20px auto;
     text-align: center;
     color: #FBD97E;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button-center {
