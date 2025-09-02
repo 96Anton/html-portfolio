@@ -148,6 +148,12 @@ hr {
   margin: 5px 0;
 }
 
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
     transition: 300ms;
     background-color: #463e21;
