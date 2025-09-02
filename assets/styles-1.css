@@ -20,7 +20,8 @@
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      line-height: 1;
+            line-height: 1;
+
     }
 
     h1.headingh1 {
@@ -44,7 +45,7 @@
     h1.secondary { 
       display: block;
       color: #655e55;
-      background-color: darkseagreen;
+      background-color: #A8A77A;
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 50px;
@@ -149,13 +150,49 @@ hr {
   margin: 5px 0;
 }
 
+#colorButton {
+    transition: 300ms;
+    background-color: #A8A77A;
+    color: #000;
+    padding: 5px 20px;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 99px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1;
+    text-transform: none;
+    text-align: center;
+   
+}
+
+#colorButton:hover {
+    transition: 300ms;
+    background-color: #E9A23B;
+    color: #000000;
+    padding: 5px 50px;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1;
+    text-transform: none;
+    text-align: center;
+   
+}
+
 .button-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button {
+#buttonHeader {
     transition: 300ms;
     background-color: #463e21;
     color: #fff;
@@ -169,16 +206,16 @@ button {
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
    
 }
 
-button:hover {
+#buttonHeader:hover {
     transition: 300ms;
-    background-color: #6f6235;
+    background-color: #636348;
     color: #fff;
-    border: 2px solid #c2ac5e;
+    border: 2px solid #A8A77A;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
