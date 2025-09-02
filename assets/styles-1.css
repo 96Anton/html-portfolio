@@ -1,0 +1,140 @@
+ body {
+      background-color: antiquewhite;
+      padding-bottom: 80px;
+        margin: 60px;
+        padding-top: 0px;
+    }
+
+    h1 { 
+      display: block;
+      color: #655e55;
+      background-color: darkseagreen;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-radius: 5px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h2 {
+        display: block;
+        color: #463e21;
+        background-color: #C58940;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 5px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+         left: 50%;
+         transform: translateX(-50%);
+    }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0.5em 0 0.2em 0;
+  font-size: 50px;
+  
+}
+
+.headingp1 {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(111, 120, 111);
+  margin: 0.2em 0 0.5em 0;
+  font-size: 23px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.headingp2 {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  color: #986a32;
+  margin: 0.2em 0 0.5em 0;
+  font-size: 23px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+p {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+a {
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    color: #463e21;
+    margin: 0.2em 0 0.5em 0;
+    font-size: 23px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+}
+
+iframe {
+  border: 5px solid #986a32;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  display: block;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, darkseagreen, #C58940, #FAF8F1);
+  margin: 5px 0;
+}
+
+.rubik-maps-italic {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+.rubik-maps-bold {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+.rubik-maps-bold-italic {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+.rubik-maps-black {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+.rubik-maps-black-italic {
+  font-family: "Rubik Maps", system-ui;
+  font-weight: 900;
+  font-style: italic;
+}
