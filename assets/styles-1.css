@@ -1,11 +1,46 @@
  body {
       background-color: antiquewhite;
       padding-bottom: 80px;
-        margin: 60px;
-        padding-top: 0px;
+      margin: 30px;
+      padding-top: 30px;
     }
 
-    h1 { 
+  header { 
+      display: block;
+      background-color: #C58940;
+      padding-top: 25px;
+      padding-bottom: 45px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+      height: auto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h1.headingh1 {
+     display: block;
+      color: #655e55;
+      background-color: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-radius: 5px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+    }
+
+    h1.secondary { 
       display: block;
       color: #655e55;
       background-color: darkseagreen;
@@ -14,12 +49,12 @@
       padding-left: 50px;
       padding-right: 50px;
       border-radius: 5px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     h2 {
@@ -31,12 +66,12 @@
         padding-left: 50px;
         padding-right: 50px;
         border-radius: 5px;
-         text-align: center;
-         margin-left: auto;
-         margin-right: auto;
-         position: relative;
-         left: 50%;
-         transform: translateX(-50%);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
   margin: 0.5em 0 0.2em 0;
-  font-size: 50px;
+  font-size: 30px;
   
 }
 
@@ -111,6 +146,40 @@ hr {
   background: #333;
   background-image: linear-gradient(to right, darkseagreen, #C58940, #FAF8F1);
   margin: 5px 0;
+}
+
+button {
+    transition: 300ms;
+    background-color: #463e21;
+    color: #fff;
+    border: 2px solid #6f6235;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 35px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+   
+}
+
+button:hover {
+    transition: 300ms;
+    background-color: #6f6235;
+    color: #fff;
+    border: 2px solid #c2ac5e;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .rubik-maps-italic {
