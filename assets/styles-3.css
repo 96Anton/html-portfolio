@@ -207,7 +207,7 @@ button {
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 button:hover {
@@ -222,5 +222,46 @@ button:hover {
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
+}
+
+#colorButton {
+    background-color: #463e21;
+    color: #fff;
+    border: 2px solid #6f6235;
+    padding: 10px 50px;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 35px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: none;
+    text-align: center;
+        transition: 300ms;
+
+   
+}
+
+#colorButton:hover {
+    background-color: #FBD97E;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 35px;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: none;
+    text-align: center;
+    transition: 300ms;
+   
 }
