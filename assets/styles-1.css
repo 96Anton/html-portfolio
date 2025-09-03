@@ -1,4 +1,7 @@
- body {
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Maps:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
       background-color: antiquewhite;
       padding-bottom: 80px;
       margin: 30px;
@@ -81,8 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
   margin: 0.5em 0 0.2em 0;
-  font-size: 30px;
-  
+  font-size: 30px; 
 }
 
 .headingp1 {
@@ -92,8 +94,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(111, 120, 111);
   margin: 0.2em 0 0.5em 0;
   font-size: 23px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   text-align: center;
 }
@@ -103,10 +105,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-style: normal;
   color: #986a32;
-  margin: 0.2em 0 0.5em 0;
   font-size: 23px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   text-align: center;
 }
@@ -116,8 +117,8 @@ p {
   font-weight: 300;
   font-size: 16px;
   color: #000000;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 a {
@@ -126,9 +127,7 @@ a {
     font-style: normal;
     color: #463e21;
     margin: 0.2em 0 0.5em 0;
-    font-size: 23px;
-    padding-left: 50px;
-    padding-right: 50px;
+    font-size: 20px;
     padding-top: 20px;
     text-align: center;
     display: block;
@@ -142,6 +141,11 @@ iframe {
   display: block;
 }
 
+.video {
+  aspect-ratio: 16 / 9;
+  width: 80%;
+}
+
 hr {
   border: 0;
   height: 1px;
@@ -151,21 +155,21 @@ hr {
 }
 
 #colorButton {
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
     transition: 300ms;
     background-color: #A8A77A;
     color: #000;
     padding: 5px 20px;
     margin: 10px;
-    font-size: 10px;
+    font-size: 11px;
     cursor: pointer;
     border-radius: 99px;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 14px;
     letter-spacing: 1;
     text-transform: none;
     text-align: center;
-   
 }
 
 #colorButton:hover {
@@ -177,9 +181,10 @@ hr {
     font-size: 10px;
     cursor: pointer;
     border-radius: 10px;
-    font-family: sans-serif;
+    font-family: "Rubik Maps", system-ui;
     font-weight: 400;
-    font-size: 14px;
+    font-style: normal;
+    font-size: 11px;
     letter-spacing: 1;
     text-transform: none;
     text-align: center;
@@ -202,9 +207,10 @@ hr {
     font-size: 16px;
     cursor: pointer;
     border-radius: 35px;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
     letter-spacing: 1px;
     text-transform: none;
     text-align: center;
@@ -220,34 +226,9 @@ hr {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
     letter-spacing: 1px;
-}
-
-.rubik-maps-italic {
-  font-family: "Rubik Maps", system-ui;
-  font-weight: 400;
-  font-style: italic;
-}
-.rubik-maps-bold {
-  font-family: "Rubik Maps", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}
-.rubik-maps-bold-italic {
-  font-family: "Rubik Maps", system-ui;
-  font-weight: 700;
-  font-style: italic;
-}
-.rubik-maps-black {
-  font-family: "Rubik Maps", system-ui;
-  font-weight: 900;
-  font-style: normal;
-}
-.rubik-maps-black-italic {
-  font-family: "Rubik Maps", system-ui;
-  font-weight: 900;
-  font-style: italic;
 }
