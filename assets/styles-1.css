@@ -13,7 +13,7 @@ body {
       padding-bottom: 45px;
       padding-left: 10px;
       padding-right: 10px;
-  border-radius: 25%  0% 90px 15% / 30%;
+      border-radius: 25%  0% 90px 15% / 30%;
       height: auto;
       text-align: center;
       margin-left: auto;
@@ -21,8 +21,8 @@ body {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-            line-height: 1;
-
+      line-height: 1;
+      cursor: pointer;
     }
 
     h1.headingh1 {
@@ -58,6 +58,7 @@ body {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+      cursor: pointer;
     }
 
     h2 {
@@ -75,6 +76,7 @@ body {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        cursor: pointer;
     }
 
 h1, h2, h3, h4, h5, h6 {
