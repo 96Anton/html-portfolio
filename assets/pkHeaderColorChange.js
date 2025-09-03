@@ -18,23 +18,13 @@ let colors = [
 
 let currentColorIndex = 0;
 
-header.addEventListener("click", function() {
+function changeColors() {
   currentColorIndex = (currentColorIndex + 1) % colors.length;
   header.style.backgroundColor = colors[currentColorIndex];
-  h2.style.backgroundColor = colors[currentColorIndex + 1];
-  secondary.style.backgroundColor = colors[currentColorIndex - 1];
-});
+  h2.style.backgroundColor = colors[(currentColorIndex + 1) % colors.length];
+  secondary.style.backgroundColor = colors[(currentColorIndex - 1 + colors.length) % colors.length];
+}
 
-h2.addEventListener("click", function() {
-  currentColorIndex = (currentColorIndex + 1) % colors.length;
-  header.style.backgroundColor = colors[currentColorIndex];
-  h2.style.backgroundColor = colors[currentColorIndex + 1];
-  secondary.style.backgroundColor = colors[currentColorIndex - 1];
-} );
-
-secondary.addEventListener("click", function() {
-  currentColorIndex = (currentColorIndex + 1) % colors.length;
-  header.style.backgroundColor = colors[currentColorIndex];
-  h2.style.backgroundColor = colors[currentColorIndex + 1];
-  secondary.style.backgroundColor = colors[currentColorIndex - 1];
-} );
+header.addEventListener("click", changeColors);
+h2.addEventListener("click", changeColors);
+secondary.addEventListener("click", changeColors);
