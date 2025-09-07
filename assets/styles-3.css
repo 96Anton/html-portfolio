@@ -4,11 +4,26 @@
     padding: 0;
 }
 
+header {
+    background-color: #06465E;
+    padding: px 0;
+    border-bottom: 15px double #0B696B;
+    top: 0;
+    transition: 300ms;
+
+}
+
+#anton {
+font-size: 65px;
+font-weight: 900;
+margin-bottom: 10px;
+line-height: 0.8;
+}
 
 .hero-image {
     background-image: url("../images/Jumpy\ Final_Bakgrund.png");
     height: 70dvh;
-    border-bottom: 5px solid #06465E;
+    border-bottom: 12px solid #06465E;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +38,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 0.9;
-    color: #06465E;  
+    color: #06465E; 
 }
 
 body {
@@ -31,21 +46,10 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
     color: #000; 
-    background-color: #48E4CB;
+    background: linear-gradient(178deg,rgba(72, 228, 203, 0.92) 27%, rgba(11, 105, 107, 0.99) 70%, rgba(72, 228, 203, 0.92) 100%);
     margin: 0;
     padding-bottom: 20px;
 
-}
-
- 
-nav a {
-    color: white;
-    margin: 0;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 a {
@@ -55,9 +59,9 @@ a {
 .parkour {
     font-weight: 600;
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0px;
-    color: #816e37;
+    color: #735c1b;
     text-align: center;
     line-height: 0.5;
     text-decoration: underline;
@@ -109,7 +113,7 @@ h3 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1;
     text-align: center;
     font-family: sans-serif;
     font-weight: 600;
@@ -152,8 +156,8 @@ hr {
 
 footer {
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
     width: fit-content;
@@ -177,7 +181,6 @@ article.project {
     padding-top: 10px;
     background-color: #0B696B;
     border-radius: 25px;
-
     text-align: center;
     color: #FBD97E;
 }
@@ -223,45 +226,4 @@ button:hover {
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: none;
-}
-
-#colorButton {
-    background-color: #463e21;
-    color: #fff;
-    border: 2px solid #6f6235;
-    padding: 10px 50px;
-    margin: 10px;
-    margin-top: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 35px;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: none;
-    text-align: center;
-        transition: 300ms;
-
-   
-}
-
-#colorButton:hover {
-    background-color: #FBD97E;
-    color: #000;
-    border: 2px solid #000;
-    padding: 10px 35px;
-    margin: 10px;
-    margin-top: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: none;
-    text-align: center;
-    transition: 300ms;
-   
 }
