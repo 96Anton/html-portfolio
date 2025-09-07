@@ -1,19 +1,21 @@
-
 body {
     font-family: "acumin-pro", sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     color: #000; 
     background-color: #cef8fc;
-    margin: 0;
     padding-bottom: 20px;
 }
 
 header {
-    background-image: url("../images/Hero picture 61.jpg");
+    background: linear-gradient(168deg, #000 5%, #5440b6 49%, #0a125b 97%);
     color: rgb(255, 255, 255);
-    height: 30dvh;
+    height: 35dvh;
     line-height: 1;    
+    border-radius: 25% 35% 100% 35%;
+    margin-left: 10px;
+    padding-left: 10px;
+    max-width:700px;
 }
 
 nav a {
@@ -112,8 +114,9 @@ hr {
 footer {
     text-align: center;
     padding: 20px;
-    background-image: url("../images/Hero picture 61.jpg");
+    background: linear-gradient(174deg, #0a125b 5%, #5440b6 49%, #000 99%);
     color: white;
     position: static;
-    border-radius: 5px;
+    border-radius: 60% 45% 65% 50%;
+    max-width: 180px;
 }
