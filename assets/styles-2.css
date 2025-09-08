@@ -1,3 +1,4 @@
+
 body {
     font-family: "acumin-pro", sans-serif;
     font-size: 14px;
@@ -11,11 +12,25 @@ header {
     background: linear-gradient(168deg, #000 5%, #5440b6 49%, #0a125b 97%);
     color: rgb(255, 255, 255);
     height: 35dvh;
-    line-height: 1;    
-    border-radius: 25% 35% 100% 35%;
+    border-radius: 65% 35% 100% 85%;
     margin-left: 10px;
     padding-left: 10px;
     max-width:700px;
+    position: relative;
+}
+
+.navAntonH {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 40px;
+    line-height: 0.8;
+}
+
+.navAnton {
+    display: inline-block;
+    margin-right:-50px;
+    padding-left: 50px;
+    line-height: 0.;
 }
 
 nav a {
@@ -24,6 +39,7 @@ nav a {
     text-decoration: none;
     font-size: 22px;
     padding: 10px;
+    line-height: 0;
 }
 
 nav a:hover {
