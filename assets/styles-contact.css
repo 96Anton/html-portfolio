@@ -1,44 +1,64 @@
 
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
 
-.rubik-mono-one-regular {
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
+    #card {
+      margin: 0 auto;
+      padding: 2em;
+      width: 75%;
+      height: 300px;
+      text-align: center;
+      border-radius: 15%  30%/ 10px 5% 30%;
+      position: relative;
+      box-sizing: content-box;
+      background-image: conic-gradient(from 1800deg, #f8c96bb8, #ae00ffbc,  #f8c96bb8, #4389f9c2, #f8c96bb8, #ae00ffca, #f8c96bb8, #4389f9c6 ,#ba69e0c8, #f8c96bb8) ;
+    }
 
-.story-script-regular {
-  font-family: "Story Script", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
+    #card::after, #card::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: conic-gradient(from var(--angle),#f8c96b, #ad00ff,  #f8c96b, #4389f9, #f8c96b, #ad00ff, #f8c96b, #4389f9 ,#bb69e0, #f8c96b);
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      padding: 10px;
+      border-radius: 15%  30%/ 10px 5% 30%;
+      animation: 10s spin linear infinite;
+    }
+
+
+    #card::before {
+      filter:blur(3rem);
+      opacity: 1;
+
+    }
+
+    @keyframes spin{
+      from {
+        --angle: 0deg;
+      }
+      to {
+        --angle: 360deg;
+      }
+    }
 
 body {
       background: rgb(254, 226, 255);
       padding-bottom: 80px;
-      margin: 0px;
-      padding-top: 30px;
+      padding-top: 60px;
     }
 
   header { 
-      display: block;
       background-image: conic-gradient(from 90deg, #f8c96b, #ad00ff,  #f8c96b, #4389f9, #f8c96b, #ad00ff, #f8c96b, #4389f9 ,#bb69e0, #f8c96b) ;
-      padding-top: 25px;
-      padding-bottom: 45px;
-      padding-left: 10px;
-      padding-right: 10px;
-      border: solid 3px #ad00ff;
-      border-radius: 15%  30%/ 10px 5% 30%;
-      height: auto;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
       line-height: 1;
       cursor: pointer;
-
     }
 
     h1.headingh1 {
@@ -68,7 +88,6 @@ body {
       padding-bottom: 15px;
       padding-left: 50px;
       padding-right: 50px;
-      border: solid 3px #ad00ff;
       margin: 30px;
       width: 70%;
       border-radius: 40%  70% 10px 15% / 40%;
