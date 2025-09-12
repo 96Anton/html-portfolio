@@ -27,10 +27,10 @@ header {
 }
 
 .navAnton {
-    display: inline-block;
+    display: inline;
     margin-right:-50px;
     padding-left: 50px;
-    line-height: 0.;
+    line-height: 1;
 }
 
 nav a {
@@ -99,7 +99,10 @@ p {
 
 img {
     display: block;
-    align-self: start;
+    align-self: center;
+    max-width: 170px;
+    max-height: 170px;
+    margin-bottom: 20px;
 }
 
 ul {
