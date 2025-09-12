@@ -5,6 +5,9 @@
       inherits: false;
     }
 
+
+    @media screen and (max-width: 767px){
+    
     #sun {
       margin: 30 auto;
       padding: 2em;
@@ -17,6 +20,43 @@
       left: 85dvw;
       box-sizing: content-box;
     }
+
+    }
+
+     @media only screen and (max-width: 1300px){
+    
+    #sun {
+      margin: 30 auto;
+      padding: 2em;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      position: relative;
+      top: 100px;
+      left: 85dvw;
+      box-sizing: content-box;
+    }
+
+    }
+
+     @media only screen and (min-width: 1300px){
+    
+    #sun {
+      margin: 30 auto;
+      padding: 2em;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 85dvw;
+      box-sizing: content-box;
+    }
+
+    }
+
 
 
     #sun::after, #sun::before {
