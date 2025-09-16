@@ -1,14 +1,16 @@
+
+
 <!DOCTYPE html>
 
 <html lang="sv">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Projekt</title>
+    <title>Startsida</title>
     <link rel="stylesheet" href="./assets/styles-3.css">
 
 </head> 
-
+ <body>    
 
         <header>
   <div class="hero-image">
@@ -24,33 +26,77 @@
   </div>
 </header>
 
+<div id="here">
+<script src="../portfolio project/assets/youAreHere.js">
+  function(youAreHere) {
 
- <body>        
+  }
+</script>
+ </div>   
             <main style="margin-top: 40px;">
                 <section class="projects">
                     <h2>Avslutade & pågående projekt</h2>
-                    <a href="./public/about.html" style="text-decoration: none;">
 
-                    <article id="card" class="project">
-                        <h2 style="color: #FBD97E;">Mitt CV</h2>
-                        <img src="./images/Profilbild-Anton.jpg" alt="Anton Ahlm" height="200" width="200">
-                        <p style="color: #FBD97E;">Här kan du läsa om mig och mina erfarenheter.</p>
-                        <br />
-                        <button >Se mitt CV</button>
-                    </article>
-                    </a>
 
-                                        <a href="./public/parkour.html" style="text-decoration: none;">
 
-                    <article id="card" class="project">
-                        <h2 style="color: #FBD97E;">Parkour prestationer</h2>
-                        <img src="./images/parkour-bild.png" alt="Parkour" height="200" width="200">
-                        <p style="color: #FBD97E;">Lär dig mer om min parkour.</p>
-                        <br />
-                        <button >Se min video</button>
-                    </article>
-                    </a>
-            
+ <!-- Testing a JS slider -->
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+      <a href="./public/about.html" style="text-decoration: none;">
+
+    <article id="card" class="project">
+        <h2 style="color: #FBD97E;">Mitt CV</h2>
+        <img src="./images/Profilbild-Anton.jpg" alt="Anton Ahlm" height="200" width="200">
+        <p style="color: #FBD97E;">Här kan du läsa om mig och mina erfarenheter.</p>
+        <br />
+        <button >Se mitt CV</button>
+    </article>
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a href="./public/parkour.html" style="text-decoration: none;">
+
+      <article id="card" class="project">
+          <h2 style="color: #FBD97E;">Parkour prestationer</h2>
+          <img src="./images/parkour-bild.png" alt="Parkour" height="200" width="200">
+          <p style="color: #FBD97E;">Lär dig mer om min parkour.</p>
+          <br />
+          <button >Se min video</button>
+      </article>
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a href="./public/contact.html" style="text-decoration: none;">
+
+      <article id="card" class="project">
+          <h2 style="color: #FBD97E;">Kontakta mig</h2>
+          <img src="./images/Anton Ahlm kontakt.jpg" alt="Anton" height="200" width="200">
+          <p style="color: #FBD97E;">Hör av dig till mig!</p>
+          <br />
+          <button >Kontakta mig</button>
+      </article>
+      </a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#x2190; </a>
+  <a class="next" onclick="plusSlides(1)">&#8594;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+ <!-- End of JS slider -->
+
+
                     <h2>Pågående &<br />framtida projekt</h2>
                     <a href="./public/sunnySavanna.html" style="text-decoration: none;">
                     <article id="card" class="project">
@@ -71,5 +117,6 @@
             <p>&copy;Anton Ahlm 2025</p>
             </footer>
 
+            <script src="../portfolio project/assets/slider.js"></script>
   </body>
 </html>
