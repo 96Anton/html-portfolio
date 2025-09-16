@@ -11,6 +11,143 @@ header {
     top: 0;
 }
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #FBD97E;
+  font-weight: bold;
+  font-size: 70px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.prev:hover, .next:hover {
+  color: #06465E;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FBD97E;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #06465E;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#here {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 15px;
+    width: 90%;
+    border-radius: 25px;
+    background-color: #00000041;
+    margin: 20px;
+}
+
+#here ul {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    background-color: rgba(72, 228, 203, 0.92);
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+#here li a {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #0B696B;
+    text-align: center;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+#here li a:hover { 
+    background-color: #094f50; transform: scale(1.03); 
+    border-radius: 9999px;
+    color: #fff;
+}
+#here li.current a { 
+    background-color: #FBD97E; 
+    border-radius: 9999px;
+    font-weight: 700; 
+}
+
+@media (max-width: 640px) {
+  #here { margin: 12px; }
+
+  #here ul {
+    flex-wrap: nowrap;    
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;      /* hide scrollbar (Firefox) */
+    gap: 8px;
+    scroll-snap-type: x proximity;
+  }
+  #here ul::-webkit-scrollbar { display: none; } /* hide scrollbar (WebKit) */
+
+  #here li { scroll-snap-align: start; }
+
+  #here li a {
+    padding: 12px 16px;
+    font-size: 16px;            /* legible on small screens */
+  }url(http://127.0.0.1:3000/public/about.html)
+}
+
+/* ====== Very small screens ====== */
+@media (max-width: 380px) {
+  /* allow wrapping instead of scroll if you prefer */
+  /* comment the next two rules if you want to keep horizontal scroll */
+  #here ul { flex-wrap: wrap; overflow: visible; }
+  #here li { flex: 1 1 calc(50% - 8px); } /* two columns of pills */
+  #here li a { width: 100%; text-align: center; }
+}
+
 #anton {
 font-size: 65px;
 font-weight: 900;
