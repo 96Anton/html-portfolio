@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Projekt</title>
     <link rel="stylesheet" href="../assets/styles-savanna.css">
-
+    <script src="../assets/variable.js">        
+    </script>
 </head> 
 
 
-
+<body>
 <header>
     <div id="sun"></div>
     <p id="welcome">Welcome to</p>
@@ -18,7 +19,7 @@
     
 </header>
 
-<body>
+
 
 <main>    
     <div id="intro">
@@ -27,6 +28,7 @@
 <br />In this page, I will highligth the amazing wildlife roaming these lands.</p>
 <hr />
 </div>
+<!--Introdution and general about savannah -->
 
 <div class="left">
     <h3>The Cheetah</h3>
@@ -61,12 +63,23 @@ Two genetically different African species exist: the savanna elephant and the fo
 </div>
 <!--More animals! -->
 
+<div id="promptBox">
+  <h3> What is your favourite animal on this page? </h3>
+  <input type="text" id="userInput" placeholder="My favourite is...">
+  <button onclick="handleInput()">Submit</button>
+</div>
+
+<div id="result" role="status" aria-live="polite" defer><p>About you choice:</p></div>
+
+    <script src="../assets/variables.js">
+    </script>
+
 </main>
 
 </body>
-    
+
 <footer>
 <p>&copy;Anton Ahlm 2025</p>
 </footer>
-    
+
 </html>
