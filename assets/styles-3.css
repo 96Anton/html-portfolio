@@ -12,7 +12,7 @@ header {
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: auto;
   position: relative;
   margin: auto;
 }
@@ -32,6 +32,8 @@ header {
   font-size: 70px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  height: 20px;
+  width: auto;
 }
 
 
@@ -118,7 +120,7 @@ li {
     font-weight: 700; 
 }
 
-@media (max-width: 640px) {
+@media (min-width: 800px) {
   #here { margin: 12px; }
 
   #here ul {
