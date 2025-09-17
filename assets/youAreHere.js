@@ -1,10 +1,10 @@
 function youAreHere() {
   const pages = {
-    "Startsida": "/index.html",
-    "Anton Ahlm CV": "/public/about.html",
-    "Kontakt": "/public/contact.html",
-    "Parkour": "/public/parkour.html",
-    "Savanna": "/public/sunnySavanna.html"
+    "Startsida": "./index.html",
+    "Anton Ahlm CV": "./public/about.html",
+    "Kontakt": "./public/contact.html",
+    "Parkour": "./public/parkour.html",
+    "Savanna": "./public/sunnySavanna.html"
   };
 
   const currentTitle = document.title;
