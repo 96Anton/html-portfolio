@@ -113,8 +113,8 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.prev { left: 5px; }
-.next { right: 5px; }
+.prev { left: 14px; }
+.next { right: 14px; }
 
 .prev:hover, .next:hover { color: #06465E; }
 
