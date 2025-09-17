@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,6 +31,12 @@ line-height: 0.8;
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+    .hero-image{
+    background-position: left 0px bottom -50px;
+}
 }
 
 .hero-text {
@@ -71,7 +78,7 @@ body {
   margin: auto;
   max-width: 360px;
   overflow: visible;
-
+  z-index: 2;
 }
 
 .mySlides {
@@ -85,11 +92,10 @@ body {
 
 .prev, .next {
   cursor: pointer;
-
   position: absolute;
   top: 50%;
   transform: translateY(-100%);
-  z-index: 2;
+  z-index: 3;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -151,8 +157,10 @@ body {
     justify-content: center;
     padding: 15px;
     width: 90%;
-    border-radius: 25px;
-    background-color: #00000041;
+    border-radius: 50%;
+    border: 2px solid #FBD97E;
+    padding: 40px;
+    background-image: radial-gradient(rgba(11, 105, 107, 0.99) 1%, #00000041 100%);
     margin: 20px auto;
     max-width: 700px;
 }
@@ -184,6 +192,7 @@ li {
     text-align: center;
     text-decoration: none;
     font-family: system-ui, sans-serif;
+    font-weight: 500;
     line-height: 1;
     white-space: nowrap;
 }
