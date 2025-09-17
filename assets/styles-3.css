@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +7,7 @@
 
 header {
     background-color: #06465E;
-    padding: px 0;
+    padding: 0px;
     border-bottom: 15px double #0B696B;
     top: 0;
 
@@ -69,7 +68,6 @@ body {
 
 
 .slideshow-container {
-  max-width: auto;
   position: relative;
   margin: auto;
 }
@@ -77,6 +75,11 @@ body {
 .mySlides {
   display: none;
 }
+
+.mySlides:first-child { 
+  display: block;       /* fallback so slider content is visible */
+}
+
 
 .prev, .next {
   cursor: pointer;
