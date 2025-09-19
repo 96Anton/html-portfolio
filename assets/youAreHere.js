@@ -4,7 +4,8 @@ function youAreHere() {
     "Anton Ahlm CV": "./public/about.html",
     "Kontakt": "./public/contact.html",
     "Parkour": "./public/parkour.html",
-    "Savanna": "./public/sunnySavanna.html"
+    "Savanna": "./public/sunnySavanna.html",
+    "Café": "./public/cafe.html"
   };
 
   const currentTitle = document.title;
