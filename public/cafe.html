@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startsida</title>
+    <link rel="stylesheet" href="./assets/styles-cafe.css">
+</head> 
+<body>
+    <main>
+        <header>
+            <h1>CAFÈ JAVASCRIPT</h1>
+        </header>
+
+        <h2>Café <span>JavaScript</span> <br />Där kod möter kaffe</h2>
+        <p>Välkommen till <b>Café JavaScript</b>, stadens mest kreativa kaffehörna där doften av nyrostat kaffe blandas med innovation, gemenskap och en nypa kodkultur. Här möts utvecklare, studenter, frilansare och nyfikna kaffeälskare för att ladda upp med energi, idéer och inspiration.<br /></p>
+
+        <h2>Vårt smaskiga utbud:</h2>
+
+        <div class="pricing-container">
+
+      <div class="pricing-plan">
+        <div class="plan-title">Hallongrotta</div>
+        <div class="plan-price">12,95 kr</div>
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1693941072719-88b26e82b522?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hallongrotta">
+        <ul class="plan-features">
+          <li>Hård kaka med hallonsylt</li>
+        </ul>
+       <a href="#cafeForm"> <button class="plan-button">Beställ</button></a>
+      </div>
+
+
+      <div class="pricing-plan">
+        <div class="plan-title">Chokladkaka</div>
+        <div class="plan-price">10,95 kr</div>
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1673886089869-a9b1c71a8138?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chokladkaka">
+        <ul class="plan-features">
+          <li>Hård kaka med chokladsmak</li>
+        </ul>
+       <a href="#cafeForm"> <button class="plan-button">Beställ</button></a>
+      </div>
+
+
+      <div class="pricing-plan">
+        <div class="plan-title">Blåbärstårta</div>
+        <div class="plan-price">89,95 kr</div>
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1653469742883-c47111ae3bc4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blåbärstårta">
+        <ul class="plan-features">
+          <li>Tårta med marsipan, grädde och sylt</li>
+        </ul>
+       <a href="#cafeForm"> <button class="plan-button">Beställ</button></a>
+      </div>
+
+    </div>
+
+    <h3>Smak och gemenskap i perfekt kombination</h3>
+    <p>
+      Vi serverar allt från silkeslen cappuccino till kraftfull espresso. För den sötsugna har vi smaskiga hembakade kakor, tårtor och bakelser – allt gjort med samma kärlek som en välskriven kod.</p>
+      <p>
+       Café JavaScript är mer än bara ett café – det är en avslappnad mötesplats för nätverkande, coworking och kreativa samtal. Ta med din laptop, slå dig ner i våra bekväma sittplatser och känn hur idéerna börjar flöda.
+    </p>
+
+            <h2>Beställ fika</h2>
+            <p><i>JavaScript kod ingår ej</i></p>
+
+        <form id="cafeForm" class="pricing-container">
+          <label>Kaka: <input type="text" id="kaka" /></label>
+          <label>Antal: <input type="number" id="antal" /></label>
+          <label>Kaffe: 
+            <select id="kaffe">
+              <option value="ja">Ja, tack</option>
+              <option value="nej">Nej, tack</option>
+            </select>
+          </label>
+          <button type="submit" id="orderButton">Beställ</button>
+        </form>
+          <ul id="order">
+            <!-- Beställningar kommer att läggas till här -->
+          </ul>
+    </main>
+    <footer>
+      <p>&copy; Anton Ahlm 2025</p>
+    </footer>
+    <script src="../assets/cafe-order.js" defer></script>
+</body>
+</html>
