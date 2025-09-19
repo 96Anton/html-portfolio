@@ -152,6 +152,14 @@ body {
 }
 
 
+/* Make .secondary card an inline-block so that 2 can be displayed next to eachother */
+.secondary {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
 #here {
     display: flex;
     justify-content: center;
