@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #232629;
+    }
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+    /* Write your CSS here */
+    /*Gap Colour: #000 */
+    .white3{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+    } 
+
+    .white2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    .white1{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 1;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+
+    }
+
+    .whiteEnd{
+      background-color: #F0F1EC;
+      grid-area: 5 / 4 / 3 / 5;
+      border-top: 10px solid #000;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    .red{
+      background-color: #E72F24;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+    } 
+    .black{
+      background-color: #232629;
+    }
+    .blue{
+      background-color: #004592;
+      height: 130px;
+      border-bottom: 10px solid #000;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 1.5rem;
+      color: #232629;
+      font-family: 'Orbitron', 'Montserrat', 'Arial Black', Arial, sans-serif;
+      text-align: center;
+    }
+
+    p{
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      color: #232629;
+      font-family: 'Orbitron', 'Montserrat', 'Arial Black', Arial, sans-serif;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+
+    span{
+      font-size: 0.8rem;
+      color: #004592;
+    }
+
+
+
+        .containerInner {
+      height: 70%;
+      width: 70%;
+      display: grid;
+      background-color: #232629;
+      grid-template-columns: 2.5fr 0.5fr 1fr 1.5fr;
+      grid-template-rows: 0.5fr 1fr 4fr 1fr;
+      gap: 4px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+<div class="red">
+   <h1>Grid Art</h1>
+   
+   <p>Inspired by the works of <a href="https://www.google.com/search?q=piet+mondrian&sca_esv=07ee5824c9a3be5e&udm=2&biw=1536&bih=730&sxsrf=AE3TifPEeceOF8ozot1hWVEWemcmXm7q0Q%3A1759035885580&ei=7cHYaLOYI4_GwPAPqcLbcA&ved=0ahUKEwjzwu2o1_qPAxUPIxAIHSnhFg4Q4dUDCBE&uact=5&oq=piet+mondrian&gs_lp=Egtnd3Mtd2l6LWltZyINcGlldCBtb25kcmlhbjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI0A9Q9gZY_gxwAngAkAEAmAFcoAGzAaoBATK4AQPIAQD4AQGYAgSgAs0BwgIGEAAYBxgewgIEEAAYHpgDAIgGAZIHAzMuMaAH0gqyBwMxLjG4B8MBwgcDMi00yAcV&sclient=gws-wiz-img"> <span>Piet Mondrian</span></a><br />
+    By Anton Ahlm</p>
+</div>
+
+<div class="white3">
+    <div class="containerInner">
+
+        <div class="white3" style="grid-column: span 2; grid-row: span 1;"></div>
+        <div class="blue" style="grid-column: span 1; grid-row: span 3;"></div>
+        <div class="yellow" style="grid-column: span 2; grid-row: span 1;"></div>
+        <div class="yellow" style="grid-column: span 1; grid-row: span 4;"></div>
+        <div class="black" style="grid-column: span 1; grid-row: span 1;"></div>
+        <div class="white2" style="grid-column: span 1; grid-row: span 1;"></div>
+        <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
+        <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
+        <div class="red" style="grid-column: span 1; grid-row: span 2;"></div>      
+
+    </div>
+  </div>
+
+<div class="white1"> 
+      <div class="containerInner">
+      <!-- Some complex and unique grid art -->
+      <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
+      <div class="black" style="grid-column: span 1; grid-row: span 2;"></div>
+      <div class="red" style="grid-column: span 1; grid-row: span 1;"></div>
+      <div class="yellow" style="grid-column: span 1; grid-row: span 3;"></div>
+      <div class="white2" style="grid-column: span 1; grid-row: span 1;"></div>
+      <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
+      <div class="black" style="grid-column: span 1; grid-row: span 2;"></div>
+      <div class="red" style="grid-column: span 1; grid-row: span 1;"></div>
+      </div>
+  
+</div>
+
+<div class="white2">
+  <div class="containerInner"> </div>
+</div>
+
+<div class="blue"></div>
+<div class="white1">
+
+</div>
+<div class="yellow"></div>
+<div class="whiteEnd">
+          <div class="containerInner">
+      <!-- Some creative and complex grid art -->
+      <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
+      <div class="black" style="grid-column: span 1; grid-row: span 1;"></div>
+      <div class="red" style="grid-column: span 2; grid-row: span 3;"></div>
+      <div class="yellow" style="grid-column: span 1; grid-row: span 2;"></div>
+      </div>
+</div>
+</div>
+</body>
+
+</html>
