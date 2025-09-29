@@ -7,6 +7,8 @@ function youAreHere() {
     "Savanna": "./public/sunnySavanna.html",
     "Café": "./public/cafe.html",
     "Grid Art": "./public/grid-art.html",
+    "Bootstrap": "./public/bootstrap.html",
+
   };
 
   const currentTitle = document.title;
