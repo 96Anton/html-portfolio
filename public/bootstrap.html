@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -14,23 +14,22 @@
       font-family: Arial, sans-serif;
     }
     .image-hero {
-      color: #0000007c;
+      color: #f1f1f1;
     }
 
     p {
       font-size: 1.1rem;
-      color: black;
       text-shadow: none;
     }
 
     h1 {
       font-family: 'Arial Black', Gadget, sans-serif;
-      color: #222222cd;
+      color: #f1f1f1;
       font-weight: 400;
     }
 
     h2, h3, h4, h5, h6 {
-      color: #333;
+      color: #f1f1f1;
       text-shadow: none;
       font-weight: 600;
     }
@@ -79,7 +78,8 @@
     #meddelande {
       margin-top: 30px;
       margin-bottom: 30px;
-      background-color: #e2e5e8;
+      background-color: #f1f1f1;
+      color: black;
       border: 2px dashed rgb(255, 193, 7);
     }
 
@@ -91,12 +91,18 @@
 
     #faq {
       margin-bottom: 60px;
+      color: #f1f1f1;
     }
 
     footer {
       position: relative;
       bottom: 0;
       width: 100%;
+    }
+
+    .accordion-body {
+      text-align: start;
+      color: #f1f1f1;
     }
 
   </style>
@@ -106,10 +112,7 @@
   
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://media.istockphoto.com/id/174648035/photo/sunflower-isolated.jpg?s=612x612&w=0&k=20&c=wMNfxWPw4Zwphpazd6vH_YtJVZnSyep_uPRU9l5kRJI=" 
-        alt="Flower" style="width: 40px; height: 40px; border-radius: 50%;">
-     Sun Flower</a>
+    <a class="navbar-brand" href="#"><img src="https://media.istockphoto.com/id/174648035/photo/sunflower-isolated.jpg?s=612x612&w=0&k=20&c=wMNfxWPw4Zwphpazd6vH_YtJVZnSyep_uPRU9l5kRJI=" alt="Flower" style="width: 40px; height: 40px; border-radius: 50%;"> Sun Flower</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -153,7 +156,7 @@
 
 
 
-  <div class="p-5 text-center bg-light rounded-3 image-hero mb-4" style="background-image: url('https://www.shutterstock.com/image-vector/wavy-line-color-green-sea-600nw-2242091011.jpg'); background-size: cover; background-position: center; height: 400px;">
+  <div class="p-5 text-center bg-light rounded-3 image-hero mb-4" style="background-image: url('https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?semt=ais_hybrid&w=740&q=80'); background-size: cover; background-position: center; height: 400px;">
     <h1 class="mb-3" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2.5rem;">Välkommen till min<br /><span class="text-primary">Bootstrap</span> sida</h1>
     <p class="mb-4">Jag är glad att ha dig här. Utforska mina låtsasprodukter och köp ingenting!</p>
       <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Vad gör du?" data-bs-content="Jag sa ju PRECIS att det inte fanns nåt att köpa">Köp nu</button>
