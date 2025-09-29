@@ -164,13 +164,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 15px;
-    width: 90%;
-    border-radius: 50%;
+    width: 95%;
+    border-radius: 20%;
     border: 2px solid #FBD97E;
     padding: 40px;
     background-image: radial-gradient(rgba(11, 105, 107, 0.99) 1%, #00000041 100%);
     margin: 20px auto;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 #here ul {
