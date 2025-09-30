@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +11,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+  min-height: 100vh;
       margin: 0;
       padding: 0;
       background-color: #232629;
     }
     .container {
-      height: 748px;
-      width: 748px;
-      display: grid;
-      background-color: #000;
-      grid-template-columns: 320px 198px 153px 50px;
-      grid-template-rows: 414px 130px 155px 22px;
-      gap: 9px;
+  width: 100vw;
+  max-width: 748px;
+  aspect-ratio: 1/1;
+  height: auto;
+  display: grid;
+  background-color: #000;
+  grid-template-columns: 43% 27% 20% 7%;
+  grid-template-rows: 55% 17% 21% 3%;
+  gap: 1.2vw;
     }
-    /* Write your CSS here */
-    /*Gap Colour: #000 */
+
+
     .white3{
       background-color: #F0F1EC;
       grid-column: span 3;
@@ -104,15 +107,41 @@
 
 
 
-        .containerInner {
-      height: 70%;
-      width: 70%;
-      display: grid;
-      background-color: #232629;
-      grid-template-columns: 2.5fr 0.5fr 1fr 1.5fr;
-      grid-template-rows: 0.5fr 1fr 4fr 1fr;
-      gap: 4px;
+    .containerInner {
+        width: 90%;
+        height: 90%;
+        display: grid;
+        background-color: #232629;
+        grid-template-columns: 2.5fr 0.5fr 1fr 1.5fr;
+        grid-template-rows: 0.5fr 1fr 4fr 1fr;
+        gap: 0.5vw;
+        box-sizing: border-box;
     }
+
+
+    @media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    gap: 2vw;
+    grid-template-columns: 43% 27% 20% 7%;
+    grid-template-rows: 55% 17% 21% 3%;
+  }
+  .containerInner {
+    width: 98%;
+    height: 98%;
+    gap: 1vw;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.55rem;
+  }
+  span {
+    font-size: 0.6rem;
+  }
+}
+
 
 
 
@@ -146,7 +175,6 @@
 
 <div class="white1"> 
       <div class="containerInner">
-      <!-- Some complex and unique grid art -->
       <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
       <div class="black" style="grid-column: span 1; grid-row: span 2;"></div>
       <div class="red" style="grid-column: span 1; grid-row: span 1;"></div>
@@ -170,7 +198,6 @@
 <div class="yellow"></div>
 <div class="whiteEnd">
           <div class="containerInner">
-      <!-- Some creative and complex grid art -->
       <div class="white3" style="grid-column: span 1; grid-row: span 1;"></div>
       <div class="black" style="grid-column: span 1; grid-row: span 1;"></div>
       <div class="red" style="grid-column: span 2; grid-row: span 3;"></div>
