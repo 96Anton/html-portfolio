@@ -1,20 +1,44 @@
 
-
 <!DOCTYPE html>
-<html lang="sv" data-bs-theme="dark">
+<html lang="sv" data-bs-theme="dark"> 
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Components</title>
+  <title>Bootstrap page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
+
+<!-- CSS styles -->
   <style>
     body {
       font-family: Arial, sans-serif;
     }
     .image-hero {
       color: #f1f1f1;
+    }
+
+  #hero {
+  background: linear-gradient(30deg, #4f1538, #4f1538, #004c75, #221a3d, #001a3d, #004c75, #4f1538);
+  background-size: 400% 400%;
+  animation: gradient 15s infinite;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
     }
 
     p {
@@ -34,32 +58,34 @@
       font-weight: 600;
     }
 
-    .row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    .container {
+      padding-top: 30px;
     }
 
     .card {
-      margin-bottom: 20px;
+      max-width: 400px;
+      margin: auto;
     }
+
+    @media screen and (min-width: 768px) {
+      .card {
+        max-width: 500px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+  .card {
+    max-width: 400px;
+  }
+}
 
     .card img {
-      height: 200px;
+      height: 300px;
       object-fit: cover;
+      width: 100%;
     }
 
-    #nyhet .card img {
-      height: 200px;
-    } 
-
-    #products {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+ 
   /* Hover effect on #products */
     #products .card:hover {
       transform: scale(1.05);
@@ -89,9 +115,21 @@
       border-radius: 10px;
     }
 
+   #faqcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     #faq {
       margin-bottom: 60px;
       color: #f1f1f1;
+      width: 80%;
+    }
+
+    #meddelande {
+      width: 80%;
     }
 
     footer {
@@ -108,8 +146,12 @@
   </style>
 </head>
 
+
+<!-- HTML body -->
 <body class="bg-gradient text-dark">
   
+  <!-- Navigation bar -->
+
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="https://media.istockphoto.com/id/174648035/photo/sunflower-isolated.jpg?s=612x612&w=0&k=20&c=wMNfxWPw4Zwphpazd6vH_YtJVZnSyep_uPRU9l5kRJI=" alt="Flower" style="width: 40px; height: 40px; border-radius: 50%;"> Sun Flower</a>
@@ -147,7 +189,7 @@
 
 
 
-
+<!-- Alert notice -->
   <div class="alert alert-info alert-dismissible fade show text-center" role="alert">
     <strong>Den här sidan är byggd med Bootstrap.</strong> Bootstrap är ett gratis och open-source CSS-ramverk.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -155,17 +197,24 @@
 
 
 
-
-  <div class="p-5 text-center bg-light rounded-3 image-hero mb-4" style="background-image: url('https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?semt=ais_hybrid&w=740&q=80'); background-size: cover; background-position: center; height: 400px;">
+<!-- Hero section -->
+  <div id="hero" class="p-5 text-center bg-light rounded-3 mb-4" style="background-position: center; height: 500px;">
     <h1 class="mb-3" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2.5rem;">Välkommen till min<br /><span class="text-primary">Bootstrap</span> sida</h1>
     <p class="mb-4">Jag är glad att ha dig här. Utforska mina låtsasprodukter och köp ingenting!</p>
-      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Vad gör du?" data-bs-content="Jag sa ju PRECIS att det inte fanns nåt att köpa">Köp nu</button>
-  
-  
-      <div class="container mt-4" id="products">
-    <div class="row">
-      <div class="col-12 col-sm-4 col-md-4" id="nyhet">
-        <div class="card" style="width: 19rem">
+     
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" data-bs-title="Vad gör du?" data-bs-content="Jag sa ju PRECIS att det inte fanns nåt att köpa">Köp nu</button>
+      <button type="button" class="btn btn-lg btn-secondary" data-bs-toggle="popover" data-bs-title="Exempelsida" data-bs-content="Detta är ett exempel på en webbutik, skapad med Bootstrap.">Läs mer</button>
+    </div>
+  </div>
+
+
+      
+  <!-- Products and cards -->
+      <div class="container mt-4 col-12" id="products">
+  <div class="row justify-content-center gy-3 gx-3">
+      <div id="nyhet" class="col-12 col-sm-6 col-md-4">
+        <div class="card h-80">
           <img src="https://www.edenbrothers.com/cdn/shop/files/sunflower-red-sun-mac-1.jpg?v=1727203240" class="card-img-top" alt="Flower">
           <div class="card-body">
             <h5 class="card-title ">Produkt nr 1 <span class="badge text-bg-secondary">Nyhet</span></h5>
@@ -174,8 +223,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-4 col-md-4">
-        <div class="card" style="width: 19rem;">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-80">
           <img src="https://cdn.sanity.io/images/pn4rwssl/production/2a7e3394798c40effd71ba67de1827a66179fd7c-576x1024.jpg?rect=0,132,576,760&w=1440&h=1900&q=75&auto=format" class="card-img-top" alt="Flower">
           <div class="card-body">
             <h5 class="card-title">Produkt nr 2</h5>
@@ -184,8 +233,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-4 col-md-4">
-        <div class="card" style="width: 19rem;">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-80">
           <img src="https://images.stockcake.com/public/1/7/6/176a4387-b55f-438f-9bc2-2e2eb422e08c_large/bees-over-sunflowers-stockcake.jpg" class="card-img-top" alt="Flower">
           <div class="card-body">
             <h5 class="card-title">Produkt nr 3 <span class="badge text-bg-danger">Populär</span></h5>
@@ -198,6 +247,7 @@
   </div>
 
 
+  <!-- Gallery carousel -->
   <div id="carousel" class="carousel slide">
     <h2 class="text-center mb-4">Bildkarusell</h2>
 
@@ -227,6 +277,8 @@
 </div>
 
 
+  <!-- FAQ Accordion -->
+<div id="faqcontainer">
   <div class="accordion" id="faq">
     <h2>FAQ - Frågor och svar</h2>
   <div class="accordion-item">
@@ -268,7 +320,7 @@
 </div>
 
 
-
+<!-- Message/notice card -->
   <hr />
 
   <div id="meddelande" class="card text-center">
@@ -287,9 +339,16 @@
 
 <hr />
 
+</div>
+
+<!-- Footer -->
+    <footer class="bg-primary text-dark text-center py-3 mt-4 rounded" data-bs-theme="dark">
+      &copy; Anton Ahlm 2025
+    </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
   <script>
     var carouselElement = document.querySelector('#carousel');
     var carousel = new bootstrap.Carousel(carouselElement, {
@@ -304,11 +363,6 @@
       });
     });
   </script>
-
-    <footer class="bg-dark text-white text-center py-3 mt-4 rounded" data-bs-theme="dark">
-      &copy; Anton Ahlm 2025
-    </footer>
-
 </body>
 
 </html>
